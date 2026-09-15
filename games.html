@@ -146,25 +146,25 @@
         </tr>
     </table>
     <script>
-  // Списки ссылок на баннеры из архива
-  const casualBanners = [
-    "https://dabamos.de",
-    "https://dabamos.de",
-    "https://dabamos.de",
-    "https://dabamos.de" // Добавил легендарную ICQ ("Аську")!
-  ];
+      // Списки ссылок на баннеры из архива
+      const casualBanners = [
+        "https://dabamos.de",
+        "https://dabamos.de",
+        "https://dabamos.de",
+        "https://dabamos.de" // Добавил легендарную ICQ ("Аську")!
+      ];
+    
+      const gamingBanners = [
+        "https://dabamos.de",
+        "https://dabamos.de",
+        "https://dabamos.de",       // Nintendo 64
+        "https://dabamos.de" // Первой плойки
+      ];
 
-  const gamingBanners = [
-    "https://dabamos.de",
-    "https://dabamos.de",
-    "https://dabamos.de",       // Nintendo 64
-    "https://dabamos.de" // Первой плойки
-  ];
-
-  // Магия рандома: выбираем случайный элемент из массивов
-  document.getElementById("casual-banner").src = casualBanners[Math.floor(Math.random() * casualBanners.length)];
-  document.getElementById("gaming-banner").src = gamingBanners[Math.floor(Math.random() * gamingBanners.length)];
-</script>
+      // Магия рандома: выбираем случайный элемент из массивов
+      document.getElementById("casual-banner").src = casualBanners[Math.floor(Math.random() * casualBanners.length)];
+      document.getElementById("gaming-banner").src = gamingBanners[Math.floor(Math.random() * gamingBanners.length)];
+    </script>
 
 </body>
 </html>
