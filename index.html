@@ -68,7 +68,9 @@
                             <table border="1" cellpadding="5" cellspacing="0" width="100%" height="250" style="border-collapse: collapse;">
                                 <tr>
                                     <td align="center" valign="middle" bgcolor="#FAFAFA">
-                                        <font size="2" color="#666666">Advertisement</font>
+                                        <div class="banner-block">
+                                            <img id="casual-banner" width="88" height="31" border="0" src="" alt="Реклама">
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -105,7 +107,9 @@
                             <table border="1" cellpadding="5" cellspacing="0" width="100%" height="150" style="border-collapse: collapse;">
                                 <tr>
                                     <td align="center" valign="middle" bgcolor="#FAFAFA">
-                                        <font size="6" color="#666666">Advertisement</font>
+                                        <div class="banner-block">
+                                          <img id="casual-banner" width="88" height="31" border="0" src="" alt="Реклама">
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -140,6 +144,26 @@
             </td>
         </tr>
     </table>
+<script>
+  // Списки ссылок на баннеры из архива
+  const casualBanners = [
+    "https://dabamos.de",
+    "https://dabamos.de",
+    "https://dabamos.de",
+    "https://dabamos.de" // Добавил легендарную ICQ ("Аську")!
+  ];
+
+  const gamingBanners = [
+    "https://dabamos.de",
+    "https://dabamos.de",
+    "https://dabamos.de",       // Nintendo 64
+    "https://dabamos.de" // Первой плойки
+  ];
+
+  // Магия рандома: выбираем случайный элемент из массивов
+  document.getElementById("casual-banner").src = casualBanners[Math.floor(Math.random() * casualBanners.length)];
+  document.getElementById("gaming-banner").src = gamingBanners[Math.floor(Math.random() * gamingBanners.length)];
+</script>
 
 </body>
 </html>
